@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100vw 52vh;
+}
+
+.square {
+  margin: 2rem 0.8rem;
+  padding: 1.2rem 6rem 0.5rem 1.2rem;
+  border-radius: 10px 95px 10px 10px;
+  background-color: hsl(228, 56%, 26%);
+}
+
+.title {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.file-icons {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.file-icons li {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  color: hsl(228, 56%, 68%);
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+.rectangle {
+  width: 30%;
+  margin: 0.8rem;
+  margin-top: 2.5rem;
+  padding: 2.3rem;
+  border-radius: 10px;
+  background-color: hsl(228, 56%, 26%);
+}
+
+.storage label {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(243, 100%, 93%);
+  display: block;
+}
+
+.capacity {
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(243, 100%, 93%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#meter {
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+meter::-webkit-meter-bar {
+  background: hsl(229, 57%, 11%);
+  padding: 0.1rem;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+}
+
+@-moz-document url-prefix() { 
+meter::-moz-meter-bar {
+  background: hsl(229, 57%, 11%);
+  padding: 0.1rem;
+  }
+
+meter::-moz-meter-optimum-value {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  }
+}
+
+.txtbox {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.txtbox p {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 35px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 90px;
+  right: 1.5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.txtbox span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .square {
+    margin-bottom: 0.5rem;
+  }
+  .rectangle {
+    width: 256px;
+    text-align: center;
+    margin: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .txtbox p {
+    width: 135px;
+    position: absolute;
+    bottom: -70px;
+    right: 52px;
+  }
+}

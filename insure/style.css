@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dv: hsl(256, 26%, 20%);
+  --primary-gb: hsl(216, 30%, 68%);
+  --secondary-vdv: hsl(270, 9%, 17%);
+  --secondary-dgv: hsl(273, 4%, 51%);
+  --secondary-vlg: hsl(0, 0%, 98%);
+}
+
+/*  Body and Page container */
+
+body {
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* header navbar menu start from here */
+
+#navbar {
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* toggle menu */
+
+label {
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+  float: right;
+  border: 3px solid black;
+  padding: 0 10px;
+  margin-top: -12px;
+}
+
+#toggle + .navbar-menu {
+  display: none;
+}
+
+#toggle:checked + .navbar-menu {
+  display: block;
+  color: white;
+  background-color: var(--primary-dv);
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.navbar-menu {
+  height: 35rem;
+  text-align: center;
+}
+
+.mobile-view {
+  position: absolute;
+  top: 4.2rem;
+  left: -1rem;
+  right: -1rem;
+  background-image: url(images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding: 2rem;
+}
+
+.navbar-list {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.anchor {
+  color: var(--secondary-vlg);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Navbar menubar ends here */
+
+.button {
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  outline: none;
+  color: var(--secondary-vlg);
+  background-color: var(--primary-dv);
+  border: 2px solid var(--secondary-vlg);
+}
+
+.button:hover {
+  color: var(--primary-dv);
+  background-color: var(--secondary-vlg);
+}
+
+/* Main content starts from here */
+/* Intro Image and Text */
+#banner {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner-left {
+  order: 1;
+  padding: 7rem 2rem;
+  color: var(--secondary-vlg);
+  background-color: var(--primary-dv);
+  text-align: center;
+}
+
+.banner-left h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.banner-left p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  line-height: 25px;
+}
+
+.pattern-left {
+  width: 13rem;
+  height: 13rem;
+  position: absolute;
+  top: 28rem;
+  left: 0;
+  background-image: url(images/bg-pattern-intro-left-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-right {
+  width: 100vw;
+  height: 28rem;
+}
+
+.image-intro {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/image-intro-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.image-intro img {
+  width: 100%;
+}
+
+.pattern-right {
+  width: 9rem;
+  height: 15rem;
+  position: absolute;
+  bottom: -3.7rem;
+  right: 0;
+  background-image: url(images/bg-pattern-intro-right-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Section two - services starts from here */
+/* We are different */
+
+#services {
+  padding: 8rem 1rem;
+  text-align: center;
+}
+
+.separator {
+  width: 11rem;
+  border: 1px solid var(--secondary-dgv);
+  text-align: center;
+  margin: 0 auto;
+}
+
+#services h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 1.5rem 0 4rem;
+}
+
+.card {
+  margin: auto;
+  padding: auto;
+}
+
+.card h2 {
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.card p {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--secondary-dgv);
+}
+
+.card img {
+  padding: 2rem 1rem;
+}
+
+/* Find out more about how we work */
+
+#about-work-banner {
+  padding: 5rem 1rem;
+  color: var(--secondary-vlg);
+  background-color: var(--primary-dv);
+  text-align: center;
+  background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#about-work-banner h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Footer starts from here */
+
+#footer {
+  margin-top: 10rem;
+  padding: 1rem;
+  background-color: var(--secondary-vlg);
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url(images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.sm-bar {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-first {
+  margin: 1rem;
+  padding: 2rem 1rem;
+}
+
+.footer-links h2 {
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary-dgv);
+}
+
+.footer-links h3 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* footer ends here */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  label {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+  }
+
+  #toggle + .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    background-image: none;
+  }
+
+  .mobile-view {
+    top: 0;
+    left: auto;
+  }
+
+  .anchor {
+    color: var(--primary-gb);
+    font-size: 1rem;
+  }
+
+  #banner {
+    width: 100vw;
+    height: 40rem;
+    color: var(--secondary-vlg);
+    background-color: var(--primary-dv);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-left {
+    background-color: transparent;
+    width: 40rem;
+    min-width: 20%;
+    text-align: left;
+  }
+
+  .banner-left > .separator {
+    width: 11rem;
+    border: 1px solid var(--secondary-dgv);
+    margin: 0 0 4rem;
+  }
+
+  .banner-left h1 {
+    font-size: 4rem;
+    line-height: 65px;
+  }
+
+  .banner-right {
+    order: 2;
+    width: 35rem;
+    height: 45rem;
+    position: relative;
+  }
+
+  .image-intro {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/image-intro-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+  }
+
+  .pattern-left {
+    width: 11rem;
+    height: 28rem;
+    position: absolute;
+    top: 30rem;
+    left: 0;
+    background-image: url(images/bg-pattern-intro-left-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .pattern-right {
+    width: 23rem;
+    height: 32rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(images/bg-pattern-intro-right-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  #services {
+    text-align: left;
+    margin: 8rem 5rem;
+    padding: 5rem;
+  }
+
+  #services > .separator {
+    margin: 2rem 0;
+  }
+
+  .different-content {
+    display: flex;
+  }
+
+  #footer {
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-position: top left;
+    background-size: 40rem 15rem;
+  }
+
+  #footer > .separator {
+    width: 80%;
+  }
+
+  #about-work-banner {
+    margin: 8rem 10rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+  }
+
+  #about-work-banner > h1 {
+    text-align: left;
+    width: 29rem;
+  }
+
+  #footer-first {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+    padding: 1rem 4rem;
+  }
+
+  #footer-second {
+    text-align: left;
+    display: flex;
+    margin: 1rem 7rem;
+    box-sizing: border-box;
+  }
+
+  .footer-links {
+    padding: 2rem;
+  }
+}

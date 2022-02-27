@@ -1,0 +1,88 @@
+/* ******************** root and body ******************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #319795;
+  --font-primary: #2d3748;
+  --font-secondary: #b7791f;
+  --white-color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ******************** site container ******************** */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header {
+  margin: 5rem 1rem 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  padding: 1rem;
+  color: var(--font-primary);
+}
+
+.main {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.input-box {
+  padding: 1rem;
+}
+
+label {
+  display: inline-block;
+  width: 15rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+input {
+  width: 25rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.img-file {
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 40rem;
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+input[type="submit"]:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}

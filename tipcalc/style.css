@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.tip-calc {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #faf089;
+  border-radius: 12px;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #319795;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.form-container {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.alert {
+  margin-top: 3rem;
+  height: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #e53e3e;
+  color: #fff;
+  visibility: hidden;
+}
+
+.value {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  color: #319795;
+}
+
+input,
+select {
+  width: 15rem;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.submit {
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #ed8936;
+}
+
+.amount {
+  text-align: center;
+  color: #2d3748;
+  margin: 0.5rem;
+  visibility: hidden;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #319795;
+  margin: 0.5rem;
+}
+
+.show-text {
+  visibility: visible;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Apparel Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="logo" />
+      </header>
+      <main>
+        <div class="img"></div>
+        <div class="txt">
+          <h1>We're</h1>
+          <h2>Coming Soon</h2>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="ebox">
+            <input
+              type="email"
+              id="email"
+              aria-labelledby="emailID"
+              placeholder="Email Address"
+              required
+            />
+            <img id="error" src="images/icon-error.svg" alt="icon-error" />
+            <img id="arrow" src="images/icon-arrow.svg" alt="icon-arrow" />
+          </div>
+          <div id="message"></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

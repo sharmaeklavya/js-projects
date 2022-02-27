@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo-Rock-Paper-Scissors">
+            </div>
+            <div class="scorecard">
+                <div class="user">
+                    <span>User</span>
+                    <h1>0</h1>
+                </div>
+                <div class="house">
+                    <span>House</span>
+                    <h1>0</h1>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="paper rps" data-id="paper">
+                <img data-id="paper" src="images/icon-paper.svg" alt=paper-icon>
+            </div>
+            <div class="scissor rps" data-id="scissor">
+                <img data-id="scissor" src="images/icon-scissors.svg" alt="Scissors-icon">
+            </div>
+            <div class="rock rps" data-id="rock">
+                <img data-id="rock" src="images/icon-rock.svg" alt="rock-icon">
+            </div>
+                <p class="user-text">You picked</p>
+                <p class="house-text">The House picked</p>
+        </main>
+        <div class="outcome">
+            <p class="result"></p>
+            <p class="narration"></p>
+            <button class="reset">Play Again</button>
+        </div>
+            <div class="set-rules">
+                <div class="img-rules">
+                    <span>Rules</span>
+                    <img id="img-rules" src="images/image-rules.svg" alt="rules">
+                </div> 
+            </div>
+        <footer>            
+            <button class="rules-btn">Rules</button>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

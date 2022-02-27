@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary-color: #f1e3c6;
+  --secondary-color: #ffab00;
+  --third-color: #2d3748;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;  
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  margin: 1rem;  
+  padding: 1rem;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quotes {    
+  width: 25rem;  
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--third-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.button {
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  cursor: pointer;
+  color: var(--third-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.texts {
+  text-align: left;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+.icon {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+p {
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.author-image {
+  margin: 1rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+@media(max-width: 768px){
+  .quotes{
+    width: 18rem;
+  }
+}

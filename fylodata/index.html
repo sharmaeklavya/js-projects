@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fylo Data Storage Component</title>
+  </head>
+  <body>
+    <main id="container">
+      <div class="square">
+        <div class="title">
+          <img src="images/logo.svg" alt="fylo-logo" />
+        </div>
+        <div class="icons">
+          <ul class="file-icons">
+            <li><i class="fas fa-file"></i></li>
+            <li><i class="fas fa-folder"></i></li>
+            <li><i class="fas fa-cloud-upload-alt"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="storage">
+          <div class="storage-meter">
+            <label for="meter">
+              You've used <strong> 815 GB</strong> of your storage
+            </label>
+            <meter id="meter" value="815" min="0" max="1000" title="GB"></meter>
+            <p class="capacity">
+              <span> 0 GB </span>
+              <span>1000 GB</span>
+            </p>
+          </div>
+        </div>
+        <div class="txtbox">
+          <p><strong>185</strong> <span>GB Left</span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

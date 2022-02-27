@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;  
+  font-size: 16px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  background-color: #ebf8ff;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.header{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:goldenrod;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+form{
+  width: 25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;   
+}
+
+.input-type{  
+  width: 72%;
+  margin: .5rem; 
+  margin-right: 0;  
+  background-color: white;  
+  display: flex;  
+}
+
+#input-area{
+  width: 90%;
+  height: 2.5rem;    
+  padding: 0.5rem;  
+  border: none;  
+  outline: none;    
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.submit{     
+  width: 10%;
+  text-align: center;  
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: none;
+  outline: none;    
+}
+
+.select-type{
+  width: 25%;
+  margin: .5rem; 
+  margin-right: 0;  
+  background-color: white;  
+  align-self: center;
+  display: flex;
+}
+
+#select-area{    
+  padding: 0 .5rem; 
+  height: 2.5rem; 
+  font-size: 0.85rem;  
+  font-weight: 400;
+  border: none; 
+  outline: none;  
+  background-color: white;  
+  border-radius: 4px 0  0 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.select-type:after{
+  content: '';
+  position: relative;
+  top: 1rem;
+  left: 0;
+  border-top: 8px solid #000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  pointer-events: none;
+}
+
+.list{
+  width: 25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.item{  
+  margin: 0.5rem;    
+  font-size: 1rem;  
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  background-color: mintcream;
+  border-radius: 4px;
+  transition: all 0.5s ease;  
+}
+
+.item p{  
+  margin: 0.25rem;
+  padding: 0.25rem;  
+  align-self: center;  
+  word-break: break-all;
+}
+
+.iconbtns{  
+  margin: 0.25rem;
+  text-align: center;
+  cursor: pointer;  
+}
+
+.checkicon,
+.editicon,
+.trashicon{   
+  margin: 0.2rem;
+  padding: 0.5rem;  
+}
+
+.checkicon{  
+  color:beige;
+  background-color: seagreen;
+}
+
+.editicon{  
+  color: gray;
+  background-color:gold
+}
+
+.trashicon{
+  color: beige;
+  background-color:tomato;
+}
+
+.checked{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall{
+  transform: translateY(8rem) rotate(20deg);
+  opacity: 0;
+}
+
+.hide-item{
+  display: none;
+}
+
+.show-item{
+  display: flex;
+}
+
+@media(max-width: 500px){
+  form{    
+    flex-direction: column;
+    align-items: center;
+  }
+  .iconbtns{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}

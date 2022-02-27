@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #446495;
+}
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #303c4f;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+}
+
+.quiz-container h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.question {
+  margin: 1rem;
+}
+
+.options {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.options input {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.options label {
+  cursor: pointer;
+}
+
+.button {
+  margin: -1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #303c4f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.submit-btn:hover {
+  background-color: #432d2c;
+  color: #d9cecc;
+}
+
+.results {
+  display: none;
+}
+
+.results h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}

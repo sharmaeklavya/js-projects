@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  background-color: #232323;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  background: steelblue;
+}
+
+h1 {
+  margin: 0;
+  padding: 8px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#headrgb {
+  display: block;
+  font-size: 26px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+#strip {
+  background: white;
+}
+
+.button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 8.5px;
+  transition: all 0.5s;
+}
+
+.selected,
+#newgame:hover,
+#easy:hover,
+#hard:hover {
+  background-color: seagreen;
+  color: white;
+}
+
+#result {
+  width: 50%;
+}
+
+#container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.square {
+  display: inline-block;
+  margin: 15px;
+  padding: 50px;
+  transition: background 1s;
+}

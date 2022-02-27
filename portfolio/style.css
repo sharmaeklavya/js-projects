@@ -1,0 +1,113 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-container{
+	margin: 25px 10px;
+	display: grid;
+	grid-template-columns: 80px 1fr 5fr 80px;
+	grid-template-areas: 
+		'. navbar portfolio .';
+}
+
+span{
+	color: white;
+	text-align: right;
+	border-bottom: 1px solid silver; 
+	outline: none;
+	display: block;
+	padding: 1.5rem;
+}
+
+.nav-bar{
+	grid-area: navbar;
+	margin: 15px 0;
+	background: #373737; 
+}
+
+.nav-item{
+	list-style: none;
+	margin: 20px;
+}
+
+.nav-link{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid silver; 
+	outline: none;
+	display: block;
+	padding: 10px;
+}
+
+.nav-link i{
+	text-align: right;
+	padding: 20px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+ 	object-fit: cover; 
+}
+
+#foods{
+	grid-area: portfolio;
+	margin: 8px;
+}
+
+.main-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	grid-auto-rows: 250px;
+	grid-auto-flow: dense;
+	margin: 7px;
+}
+
+.big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.vertical {
+	grid-row: span 2; 
+}
+
+@media (max-width: 760px){
+	.main-container{
+		margin: 15px;
+		display: block;
+	}
+	span{
+		text-align: center;
+	}
+	.nav-link{
+		text-align: center;
+	}
+
+	.nav-link i {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 500px){
+	.main-content{
+		grid-template-columns: 1fr;
+	}
+	.nav-item{
+		text-align: center;
+	}
+}
+
+@media (max-width: 800px){
+	.main-content{
+		grid-template-columns: 1fr;
+	}
+	.nav-item{
+		text-align: center;
+	}

@@ -1,0 +1,158 @@
+:root {
+	--text-color: rgb(255, 255, 255);
+	--var-border: 1px solid black;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+.container{
+	width: 60%;
+	margin: auto;
+}
+
+.nav-bar, .caption, .profile, .featured-work{
+	margin: 40px 0;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+}
+
+.nav-bar img {
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-bar h1{
+	margin: 0 35px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.caption h2{
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.caption h3{
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.button {
+	font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 8px 8px 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+}
+
+.button a{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+
+.button:nth-child(3){
+	background-color: rgb(53, 126, 221);
+    color: var(--text-color);
+}
+
+.button:nth-child(4){
+	background-color: rgb(255, 183, 0);
+    color: var(--text-color);
+}
+
+.button:nth-child(5){
+	background-color: rgb(255, 65, 54);
+    color: var(--text-color);
+}
+
+.button:nth-child(6){
+	background-color: rgb(119, 119, 119);
+    color: var(--text-color);
+}
+
+.button:nth-child(7){
+	background-color: rgb(114, 125, 54);
+    color: var(--text-color);
+}
+
+.profile h1, .featured-work h1{
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.credentials{
+	padding: 0 10px;
+}
+
+.credentials li {
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 15px 8px;
+}
+
+.defining-feature{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.projects{
+	margin: 10px;
+}
+
+.projects h2{
+	font-size: 22px;
+	font-weight: 500;
+	word-wrap: break-word;
+	margin: 0;
+}
+
+.work-list{
+	padding: 0 20px;
+}
+
+.work-list a{
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.work-list a:hover{
+	color:  rgb(53, 126, 221);
+}
+
+footer {
+	margin: 80px 0 40px 0;
+}
+
+@media(max-width: 768px){
+	.container{
+		width: 80%;
+	}
+	.credentials {
+		margin: 0;
+		padding: 0 10px;
+	}
+	.defining-feature{
+		grid-template-columns: repeat(2, 50%);
+	}
+}

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.article {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-img {
+  width: 14rem;
+  height: 13.8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/drawers.jpg);
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 8px 6px -6px hsl(212, 23%, 69%);
+}
+
+.article-text {
+  width: 18rem;
+  height: 12.5rem;
+  padding: 0.5rem 2rem 0.8rem 1.5rem;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 8px 6px -6px hsl(212, 23%, 69%);
+}
+
+.article-text h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.article-text p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 0.9rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.author-img img {
+  width: 70%;
+  height: 65%;
+  border-radius: 50%;
+}
+
+.author-details h2 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0;
+  color: hsl(217, 19%, 35%);
+}
+
+.author-details p {
+  font-size: 10px;
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+}
+
+.share {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+.sharebtn {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: hsl(214, 17%, 51%);
+  background-color: hsl(210, 46%, 95%);
+}
+
+.palette {
+  width: 10rem;
+  height: 3rem;
+  position: relative;
+  top: -6.5rem;
+  left: 11.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(217, 19%, 35%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.shareicons {
+  display: flex;
+  padding-left: 8px;
+}
+
+.iconsbtn {
+  outline: none;
+  border: none;
+  list-style: none;
+  color: white;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.iconsbtn a {
+  color: inherit;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+@media (max-width: 690px) {
+  .article {
+    flex-direction: column;
+  }
+  .article-img {
+    width: 18.5rem;
+    height: 12.4rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .article-text {
+    width: 15rem;
+    height: 16rem;
+    padding: 0.5rem 2rem 0.8rem 1.5rem;
+    border-radius: 0 0 10px 10px;
+    padding: 1.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .article-text h1 {
+    font-size: 14.2px;
+    line-height: 1.2rem;
+  }
+
+  .article-text p {
+    font-size: 12.2px;
+    line-height: 1.2rem;
+  }
+  .author {
+    margin-top: 2rem;
+  }
+  .author-details h2 {
+    font-size: 12px;
+  }
+
+  .author-details p {
+    font-size: 10px;
+  }
+
+  .share {
+    z-index: 9999;
+    margin-bottom: 2px;
+  }
+
+  .sharetxt p {
+    font-size: 14px;
+  }
+
+  .iconsbtn {
+    font-size: 20px;
+  }
+
+  .palette {
+    width: 15.6rem;
+    height: 4rem;
+    justify-content: left;
+    position: relative;
+    top: -3.7rem;
+    left: -1.8rem;
+    padding: 0 1.5rem;
+    border-radius: 0 0 10px 10px;
+  }
+}
