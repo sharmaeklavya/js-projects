@@ -1,7 +1,7 @@
 ## Live Demo
 
 - [Git-hub pages](https://sharmaeklavya.github.io)
-- [Portfolio](https://eklavyasharma.netlify.app)
+- [WandersApp](https://eklavyasharma.netlify.app)
 
 ## Small JS Projects:
 
